@@ -1,21 +1,26 @@
-﻿@model practice1.Models.Customer;
-
-    @{
+﻿@model IEnumerable<practice1.Models.Customer>
+@{
     Layout = null;
 }
 
+<!DOCTYPE html>
 
-    <div>
-        <h2>Customer List</h2>
-       
-
-       @foreach (var n in @Model)
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Movie</title>
+</head>
+<body>
+    <div> 
+        @foreach (var n in @Model)
         {
-            if (@n.ID = @ViewBag.ID)
+            if (@n.CustID == @ViewBag.ID)
             {
-                @n.CustomerName
+                @n.CustName
+                @n.CustMovieID
             }
 
         }
     </div>
-
+</body>
+</html>
