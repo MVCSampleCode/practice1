@@ -1,0 +1,23 @@
+﻿@model practice1.ViewModel.CommonViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Customer</title>
+</head>
+<body>
+    <div> 
+        <h2>Customer List</h2>
+
+        @Model.CommonCustomer.CustID 
+        @Model.CommonCustomer.CustName
+
+    </div>
+</body>
+</html>

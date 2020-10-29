@@ -1,0 +1,21 @@
+﻿@model practice1.Models.Customer;
+
+    @{
+    Layout = null;
+}
+
+
+    <div>
+        <h2>Customer List</h2>
+       
+
+       @foreach (var n in @Model)
+        {
+            if (@n.ID = @ViewBag.ID)
+            {
+                @n.CustomerName
+            }
+
+        }
+    </div>
+
