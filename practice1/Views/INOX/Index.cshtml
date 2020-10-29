@@ -1,0 +1,26 @@
+﻿@model practice1.ViewModel.CenemaAndCustomerVIewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h2>List Of Movie Names</h2>
+
+        @foreach (var n in Model.CinemaVM)
+        {
+            
+            @Html.ActionLink(@n.Moviename,"MovieCustomer",new {id=@n.Movieid })
+            <br />
+        }
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<practice1.Models.CinemaCustomers>
+    
+    @{
+        Layout = null;
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>MovieCustomer</title>
+    </head>
+    <body>
+        <div>
+            @foreach (var c in Model)
+            {
+                @c.CustomerName <br />
+            }
+
+        </div>
+    </body>
+</html>

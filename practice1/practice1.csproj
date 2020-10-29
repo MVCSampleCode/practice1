@@ -199,17 +199,21 @@
     <Compile Include="Controllers\CommonController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\INOXController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Cinema.cs" />
+    <Compile Include="Models\CinemaCustomers.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\CenemaAndCustomerVIewModel.cs" />
     <Compile Include="ViewModel\CommonViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -275,6 +279,8 @@
     <Content Include="Views\Common\Index.cshtml" />
     <Content Include="Views\Common\Customer.cshtml" />
     <Content Include="Views\Common\Movie.cshtml" />
+    <Content Include="Views\INOX\Index.cshtml" />
+    <Content Include="Views\INOX\MovieCustomer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
